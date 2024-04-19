@@ -1,8 +1,8 @@
-# Zadanie: Regulowany rynek
+# Zadanie: Zprzężenie zwrotne
 
 | Termin oddania | Punkty     |
 |----------------|:-----------|
-| 12.05.2023  23:00   |    10      |
+| 17.05.2024  23:00   |    10      |
 
 --- 
 Przekroczenie terminu o **n** zajęć wiąże się z karą:
@@ -11,7 +11,15 @@ Przekroczenie terminu o **n** zajęć wiąże się z karą:
 --- 
 
 ### Napisz program, który ...
- będzie modelował następującą sytuację rynkową:
+ będzie modelował układ samostabilizujących się obiektów. Przykładem może być zadanie Rynek z zajęć programistycznych (treść poniżej).
+ W zadaniu wykorzystano wzorzec Obserwator do zbierania informacji o poszczególnych grupach obieków. 
+ Zaproponuj alternatywne rozwiązanie, które:
+ - nie będzie korzystało ze wzorca Obserwator
+ - będzie pozwalało skonfigurować algorytm samostabilizujący się dla N grup obiektów, z któych dane emitowane przez każdą grupę są ważne dla pozostałych; patrz [Sprzężenie zwrotne](https://mfiles.pl/pl/index.php/Sprz%C4%99%C5%BCenie_zwrotne).
+ - układ będzie posiadał algorytm stabilizacji.
+
+
+## Zadanie Rynek
 
 - **Sprzedawcy** posiadają ograniczoną liczbę produktów w jednostce czasu, 
 	które oferują na wolnym rynku po cenach, które zależą od:
